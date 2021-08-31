@@ -1,6 +1,6 @@
 # This is a basic workflow that is manually triggered
 
-name: Manual workflow
+name: Test workflow
 
 # Controls when the action will run. Workflow runs when manually triggered using the UI
 # or API.
@@ -29,7 +29,7 @@ jobs:
     - name: Send greeting
       run: echo "Hello ${{ github.event.inputs.name }}"
    
-    image_build:
+  image_build:
      runs-on: self-hosted
      steps:
      - uses: actions/checkout@v2
