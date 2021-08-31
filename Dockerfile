@@ -1,8 +1,8 @@
 # base
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 
 # set the github runner version
-ARG RUNNER_VERSION="2.263.0"
+ARG RUNNER_VERSION="2.280.3"
 
 # update the base packages and add a non-sudo user
 RUN apt-get update -y && apt-get upgrade -y && useradd -m docker
